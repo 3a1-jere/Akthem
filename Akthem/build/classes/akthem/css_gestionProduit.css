@@ -1,0 +1,19 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+#login1{
+    -fx-background-color: #ffffff;
+}
+
+#K1{
+    -fx-background-color: #cccccc;
+}
+
+.glyph-icon{
+    
+    -fx-fill :#66ff00;
+}

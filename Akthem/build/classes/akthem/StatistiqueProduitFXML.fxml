@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="akthem.StatistiqueProduitController">
+   <children>
+      <Label layoutX="257.0" layoutY="14.0" text="les statistiques selon la quantité disponible">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.8952380952380953" endY="0.6666666666666667" startY="0.8142857142857143">
+               <stops>
+                  <Stop color="#f0ff35" />
+                  <Stop color="#a9ff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <BarChart fx:id="barchart" layoutX="144.0" layoutY="41.0" prefHeight="351.0" prefWidth="592.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="load" layoutX="14.0" layoutY="180.0" mnemonicParsing="false" onAction="#loadchart" prefHeight="25.0" prefWidth="129.0" text="refrecher statistiques" />
+      <Button fx:id="back" layoutX="14.0" layoutY="367.0" mnemonicParsing="false" onAction="#back" text="&lt;-" />
+   </children>
+</AnchorPane>

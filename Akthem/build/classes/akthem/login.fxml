@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="K1" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@css_gestionProduit.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="akthem.LoginController">
+   <children>
+      <ImageView fitHeight="190.0" fitWidth="103.0" layoutX="449.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/green.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="login1" layoutX="322.0" layoutY="90.0" prefHeight="200.0" prefWidth="200.0" styleClass="mainFxmlClass">
+         <children>
+            <JFXTextField fx:id="login" layoutX="44.0" layoutY="53.0" prefHeight="25.0" prefWidth="127.0" promptText="USER" />
+            <JFXTextField fx:id="password" layoutX="44.0" layoutY="100.0" prefHeight="25.0" prefWidth="119.0" promptText="PASSWORD" />
+            <FontAwesomeIcon iconName="LOCK" layoutX="88.0" layoutY="38.0" size="20" styleClass="glyph-icon" />
+            <FontAwesomeIcon iconName="USER" layoutX="14.0" layoutY="77.0" size="15" styleClass="glyph-icon" />
+            <FontAwesomeIcon iconName="KEY" layoutX="13.0" layoutY="124.0" size="15" styleClass="glyph-icon" />
+            <Button fx:id="logina" layoutX="62.0" layoutY="146.0" mnemonicParsing="false" onAction="#connecter" text="login" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="190.0" fitWidth="233.0" layoutX="38.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nature.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="91.0" layoutY="74.0" text="SHOPETALE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5571428571428572" endY="1.0" startX="0.18095238095238095">
+               <stops>
+                  <Stop color="#82dd03" />
+                  <Stop color="#cef55a" offset="0.8467432950191569" />
+                  <Stop color="#a9ff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="119.0" layoutX="262.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/green.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

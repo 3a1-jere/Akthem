@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="660.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="akthem.HomeController">
+   <children>
+      <ImageView fitHeight="69.0" fitWidth="64.0" layoutX="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="25.0">
+         <image>
+            <Image url="@../../../../../../wamp64/www/produits/c.png" />
+         </image>
+      </ImageView>
+      <BorderPane layoutY="-2.0" />
+      <HBox layoutX="166.0" layoutY="101.0" prefHeight="109.0" prefWidth="354.0">
+         <children>
+            <Button fx:id="gestionProduit" mnemonicParsing="false" onAction="#back" prefHeight="100.0" prefWidth="107.0">
+               <graphic>
+                  <ImageView fx:id="image" fitHeight="73.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../wamp64/www/produits/d.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="111.0">
+               <graphic>
+                  <ImageView fitHeight="91.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="105.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="166.0" layoutY="237.0" prefHeight="121.0" prefWidth="354.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="112.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="109.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="107.0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="20.0" layoutY="84.0" text="Akthem Arfaoui" textFill="WHITE" />
+      <Button fx:id="deconnecter" layoutX="594.0" layoutY="14.0" mnemonicParsing="false" onAction="#deconnecter" text="deconnecter" />
+   </children>
+</AnchorPane>
